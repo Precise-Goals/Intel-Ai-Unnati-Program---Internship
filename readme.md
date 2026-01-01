@@ -387,6 +387,22 @@ result = classifier.classify("This product is amazing!")
 
 ---
 
+## 👥 Team Falcons
+
+| Name | Role | Email | Contact | CGPA |
+|------|------|-------|---------|------|
+| **Sarthak Tulsidas Patil** | Developer (CSE) | sarthak.patil@nmiet.edu.in | 7387303695 | 9.57 |
+| **Prathamesh Santosh Kolhe** | Developer (CSE) | prathameshkolhe6099@gmail.com | 9975668077 | 9.18 |
+| **Dhiraj Takale** | Developer (CSE) | dhirajtakale17@gmail.com | 8668945438 | 9.27 |
+
+### Mentor
+
+| Name | Role | Email | Contact |
+|------|------|-------|---------|
+| **Prof. Jordan Choudhari** | Assistant Professor | jordan.choudhari@nmiet.edu.in | 7709754570 |
+
+---
+
 ## 📜 License
 
 MIT License - See [LICENSE](LICENSE) for details.
@@ -395,7 +411,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-**Built with ❤️ for Intel® Unnati Industrial Training Program 2025**
+**Built with ❤️ by Team Falcons for Intel® Unnati Industrial Training Program 2025**
 
 *No forbidden frameworks. Pure Python. Intel® Optimized.*
 
