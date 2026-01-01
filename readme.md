@@ -1,17 +1,18 @@
 <div align="center">
 
-![AI Agent Framework](https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYjc4OTYwZ2tiZzZ4em1oaHZmY29tc3RxdDZ5NTU1ZGlndmZyOGh6cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EC5kEeJ4qz8ipD1S4R/source.gif)
-
-# 🤖 AI Agent Framework
-
+# AI Agent Framework
 ### Intel® Unnati Industrial Training Program 2025
-
 **A Pure Python AI Agent Framework with Intel® OpenVINO™ Optimization**
+
+
+
+
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![OpenVINO](https://img.shields.io/badge/Intel-OpenVINO™-0071C5.svg)](https://docs.openvino.ai/)
 
+![AI Agent Framework](https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYjc4OTYwZ2tiZzZ4em1oaHZmY29tc3RxdDZ5NTU1ZGlndmZyOGh6cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EC5kEeJ4qz8ipD1S4R/source.gif)
 </div>
 
 ---
