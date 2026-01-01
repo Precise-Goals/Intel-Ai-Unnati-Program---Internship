@@ -1,0 +1,54 @@
+# Example Workflow Definition
+# This YAML file demonstrates how to define workflows for the orchestrator
+
+name: data_analysis_pipeline
+description: A multi-step data analysis workflow with parallel execution
+
+# Global configuration
+config:
+  max_retries: 3
+  timeout: 300
+
+# Task definitions
+tasks:
+  # Entry point task - no dependencies
+  fetch_data:
+    type: tool
+    config:
+      tool_name: fetch_data
+      args:
+        source: "api"
+    retry:
+      max_retries: 2
+      retry_delay: 1.0
+
+  # These two tasks run in parallel after fetch_data
+  transform_records:
+    type: tool
+    depends_on: [fetch_data]
+    config:
+      tool_name: transform_records
+      args:
+        records: "{fetch_data_result}"
+
+  extract_metadata:
+    type: function
+    depends_on: [fetch_data]
+    config:
+      function: extract_metadata
+
+  # Aggregation depends on transform_records
+  aggregate_stats:
+    type: tool
+    depends_on: [transform_records]
+    config:
+      tool_name: aggregate_data
+      args:
+        data: "{transform_records_result}"
+
+  # Final report depends on both branches
+  generate_report:
+    type: function
+    depends_on: [aggregate_stats, extract_metadata]
+    config:
+      function: generate_report

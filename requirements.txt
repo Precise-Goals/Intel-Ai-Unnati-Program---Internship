@@ -1,6 +1,17 @@
-kafka-python==2.0.2
+# AI Agent Framework Dependencies
+
+# Core dependencies (no external agent frameworks)
 pydantic>=2.9.0
+pyyaml>=6.0
+
+# Kafka for distributed messaging (optional)
+kafka-python==2.0.2
+
+# Intel OpenVINO optimizations (optional)
 optimum[openvino,nncf]
 transformers
 torch
 scipy
+
+# Additional utilities
+typing_extensions>=4.0.0

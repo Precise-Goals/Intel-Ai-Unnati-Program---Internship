@@ -1,0 +1,55 @@
+# Research Workflow
+# A workflow that demonstrates LLM and tool tasks for research automation
+
+name: research_workflow
+description: Automated research workflow with web search and summarization
+
+tasks:
+  # Search the web for information
+  web_search:
+    type: tool
+    config:
+      tool_name: web_search
+      args:
+        query: "{query}"
+    retry:
+      max_retries: 3
+      retry_delay: 2.0
+
+  # Extract entities from search results
+  extract_entities:
+    type: tool
+    depends_on: [web_search]
+    config:
+      tool_name: extract_entities
+      args:
+        text: "{web_search_result}"
+
+  # Analyze sentiment of results
+  sentiment_analysis:
+    type: tool
+    depends_on: [web_search]
+    config:
+      tool_name: sentiment_analysis
+      args:
+        text: "{web_search_result}"
+
+  # Generate summary (LLM task)
+  summarize:
+    type: llm
+    depends_on: [web_search]
+    config:
+      prompt_template: |
+        Summarize the following search results:
+        {web_search_result}
+        
+        Provide a concise summary in 2-3 sentences.
+    retry:
+      max_retries: 2
+
+  # Compile final report
+  compile_report:
+    type: function
+    depends_on: [extract_entities, sentiment_analysis, summarize]
+    config:
+      function: compile_research_report
