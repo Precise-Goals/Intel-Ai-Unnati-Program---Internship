@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![OpenVINO](https://img.shields.io/badge/Intel-OpenVINO™-0071C5.svg)](https://docs.openvino.ai/)
 
-![](https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyYjc4OTYwZ2tiZzZ4em1oaHZmY29tc3RxdDZ5NTU1ZGlndmZyOGh6cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EC5kEeJ4qz8ipD1S4R/source.gif)
+![](https://i.giphy.com/EC5kEeJ4qz8ipD1S4R.webp)
 
 </div>
 
