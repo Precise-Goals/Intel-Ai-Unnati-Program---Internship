@@ -18,7 +18,7 @@
 
 ---
 
-## 📋 TL;DR
+## 📋 TL;DR (Too Long, Didn't Read) short Overview
 
 > **Built from scratch** — A complete AI Agent Framework for orchestrating agentic workflows **without** using CrewAI, AutoGen, LangGraph, or n8n.
 
