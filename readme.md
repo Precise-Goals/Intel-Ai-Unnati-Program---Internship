@@ -417,7 +417,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-![alt text](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDR5czY0YmkxdnU0djg3ZGNjd3NkZXowb2w0dGhxcHZvM3N3NzRvaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eg02gyLrv9ZiUvemFZ/giphy.gif)
+![alt text](https://i.giphy.com/Eg02gyLrv9ZiUvemFZ.webp)
 
 **Built with ❤️ by Team Falcons for Intel® Unnati Industrial Training Program 2025**
 
