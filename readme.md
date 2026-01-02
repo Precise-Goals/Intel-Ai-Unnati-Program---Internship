@@ -114,21 +114,26 @@ pip install -r requirements.txt
 ### 2. Run All Demos
 
 ```bash
-# Reference Agents (Research + Data Processing)
-python examples/agents_demo.py
+# Step 1: Set PYTHONPATH (required before running demos)
 
-# Tool System with Schema Validation
-python examples/tools_demo.py
+# Linux/macOS:
+export PYTHONPATH=$(pwd)
 
-# YAML Orchestrator with State Persistence
-python examples/orchestrator_demo.py
+# Windows PowerShell:
+$env:PYTHONPATH = (Get-Location).Path
 
-# Structured Logging Demo
-python examples/logging_demo.py
+# Windows CMD:
+set PYTHONPATH=%cd%
 
-# OpenVINO Benchmark (simulation if OpenVINO not installed)
-python examples/openvino_benchmark.py
+# Step 2: Run the demos
+python examples/agents_demo.py       # Reference Agents (Research + Data Processing)
+python examples/tools_demo.py        # Tool System with Schema Validation
+python examples/orchestrator_demo.py # YAML Orchestrator with State Persistence
+python examples/logging_demo.py      # Structured Logging Demo
+python examples/openvino_benchmark.py # OpenVINO Benchmark
 ```
+
+> 💡 **Tip**: On Windows, you can also run `run_demos.bat` which sets PYTHONPATH automatically.
 
 ### 3. Quick Code Example
 
